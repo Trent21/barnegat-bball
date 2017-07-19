@@ -269,6 +269,11 @@ and (max-device-width : 667px) {
   margin-left:130px;
   margin-right: 15px;
 }
+  
+.updates {
+ position:relative;
+  float: left;
+} 
 
 .navbar {
   width: 400%;
