@@ -256,7 +256,7 @@ and (min-device-width : 375px)
 and (max-device-width : 667px) { 
 
 .jumbotron {
-  margin-left: 75px;
+  margin-left: 80px;
   width:360%;
 }
 
