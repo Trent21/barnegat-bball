@@ -1,0 +1,830 @@
+<DOCTYPE! html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+  <title>Barnegat Basketball</title>
+
+
+  <!-- Bootstrap -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<style>
+  
+  table {
+      font-family: arial, sans-serif;
+      border-style: solid;
+      border-color: darkOrange;
+      width: 95%;
+      background: black;
+      margin-top: 30px;
+      margin-bottom: 60px;
+      margin-right: 30px;
+      margin-left: 30px;
+      font-weight: bold;
+  }
+
+  td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+  }
+
+  tr:nth-child(even) {
+      background-color: DarkOrange;
+  }
+
+  h2 {
+    margin: 20px;
+    color:white;
+    font-weight: bold;
+  }
+
+
+#team-pic {
+  margin-left: 250px;
+}
+
+#varsity-team{
+  text-align: center;
+  margin:20px;
+  color: white;
+  font-weight: bold;
+ }
+
+.team-name {
+  color:white;
+  text-align: center;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+header img {
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+  width: 200px;
+}
+
+aside {
+  border-top: 0px solid darkOrange;
+  border-bottom: 0px solid darkOrange;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  height: 250px;
+  width: 250px;
+  background: url(https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Images-Bengals-Backgrounds.jpg);
+  background-size: cover;
+  overflow: hidden;
+  box-shadow: 0 0 100px 10px #fff;
+  transition: all ease 0.3s;
+}
+
+aside:hover {
+  border-top: 4px solid darkOrange;
+  border-bottom: 4px solid darkOrange;
+  border-radius: 5px;
+  height: 480px;
+  width: 350px;
+  box-shadow: 0 0 70px 10px #fff;
+}
+
+aside:hover header img {
+  animation: profile_image 2000ms linear both;
+  animation-delay: 0.5s;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 21px;
+  line-height: 12px;
+  display: inline-block;
+  padding: 7px;
+  transition: all ease 0.250s;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+aside:hover header h1 {
+  margin-top: 0px;
+  outline: 0 solid #fff;
+  border-top: 0px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+header h2 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 0px;
+  margin: 0;
+}
+
+.profile-bio {
+  text-align: center;
+  margin-top: 10px;
+  padding: 1px 20px 10px 20px !important;
+  transition: all linear 1.5s;
+  color: #fff;
+  font-size: 10px;
+  opacity: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.42) 49%, rgba(0, 0, 0, 0.61) 100%);
+}
+
+aside:hover .profile-bio {
+  opacity: 1;
+}
+
+.profile-bio p:first-child {
+  text-align: center;
+  font-size: 14px;
+}
+
+.profile-social-links {
+  position: relative;
+  margin-top: -440px;
+  margin-left: -100px;
+  list-style-type: none;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+aside:hover .profile-social-links {
+  margin-left: -30px;
+  opacity: 1;
+}
+
+.profile-social-links li img {
+  width: 30px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+/*PROFILE IMAGE ANIMATE */
+
+@keyframes profile_image {
+  0% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  3.4% {
+    transform: matrix3d(1.032, 0, 0, 0, 0, 1.041, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  4.7% {
+    transform: matrix3d(1.045, 0, 0, 0, 0, 1.06, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  6.81% {
+    transform: matrix3d(1.066, 0, 0, 0, 0, 1.089, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  9.41% {
+    transform: matrix3d(1.088, 0, 0, 0, 0, 1.117, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  10.21% {
+    transform: matrix3d(1.094, 0, 0, 0, 0, 1.123, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  13.61% {
+    transform: matrix3d(1.112, 0, 0, 0, 0, 1.133, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  14.11% {
+    transform: matrix3d(1.114, 0, 0, 0, 0, 1.133, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  17.52% {
+    transform: matrix3d(1.121, 0, 0, 0, 0, 1.124, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  18.72% {
+    transform: matrix3d(1.121, 0, 0, 0, 0, 1.119, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  21.32% {
+    transform: matrix3d(1.12, 0, 0, 0, 0, 1.107, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  24.32% {
+    transform: matrix3d(1.115, 0, 0, 0, 0, 1.096, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  25.23% {
+    transform: matrix3d(1.113, 0, 0, 0, 0, 1.094, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  29.03% {
+    transform: matrix3d(1.106, 0, 0, 0, 0, 1.09, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  29.93% {
+    transform: matrix3d(1.105, 0, 0, 0, 0, 1.09, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  35.54% {
+    transform: matrix3d(1.098, 0, 0, 0, 0, 1.096, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  36.74% {
+    transform: matrix3d(1.097, 0, 0, 0, 0, 1.098, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  41.04% {
+    transform: matrix3d(1.096, 0, 0, 0, 0, 1.102, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  44.44% {
+    transform: matrix3d(1.097, 0, 0, 0, 0, 1.103, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  52.15% {
+    transform: matrix3d(1.099, 0, 0, 0, 0, 1.101, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  59.86% {
+    transform: matrix3d(1.101, 0, 0, 0, 0, 1.099, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  63.26% {
+    transform: matrix3d(1.101, 0, 0, 0, 0, 1.099, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  75.28% {
+    transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  85.49% {
+    transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  90.69% {
+    transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  100% {
+    transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+}
+/*NAME ANIMATE */
+
+aside:hover header h1 {
+  animation: name_and_job 1500ms linear both;
+  animation-delay: 0.4s;
+}
+
+@keyframes name_and_job {
+  0% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, 0, 0, 1);
+  }
+  1.3% {
+    transform: matrix3d(3.905, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -237.02, 0, 0, 1);
+  }
+  2.55% {
+    transform: matrix3d(4.554, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -182.798, 0, 0, 1);
+  }
+  4.1% {
+    transform: matrix3d(4.025, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -125.912, 0, 0, 1);
+  }
+  5.71% {
+    transform: matrix3d(3.039, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -79.596, 0, 0, 1);
+  }
+  8.11% {
+    transform: matrix3d(1.82, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -31.647, 0, 0, 1);
+  }
+  8.81% {
+    transform: matrix3d(1.581, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -21.84, 0, 0, 1);
+  }
+  11.96% {
+    transform: matrix3d(1.034, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.825, 0, 0, 1);
+  }
+  12.11% {
+    transform: matrix3d(1.023, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.53, 0, 0, 1);
+  }
+  15.07% {
+    transform: matrix3d(0.947, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.662, 0, 0, 1);
+  }
+  16.12% {
+    transform: matrix3d(0.951, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.007, 0, 0, 1);
+  }
+  27.23% {
+    transform: matrix3d(1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.352, 0, 0, 1);
+  }
+  27.58% {
+    transform: matrix3d(1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.121, 0, 0, 1);
+  }
+  38.34% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.311, 0, 0, 1);
+  }
+  40.09% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.291, 0, 0, 1);
+  }
+  50% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.048, 0, 0, 1);
+  }
+  60.56% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.007, 0, 0, 1);
+  }
+  82.78% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  100% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+}
+
+/*aside:hover ul li:first-child {
+  animation: social_animation 2000ms ease-in-out both;
+  animation-delay: 0.75s;
+}
+
+aside:hover ul li:nth-child(2) {
+  animation: social_animation 2000ms ease-in-out both;
+  animation-delay: 1s;
+}
+
+aside:hover ul li:nth-child(3) {
+  animation: social_animation 2000ms ease-in-out both;
+  animation-delay: 1.25s;
+}*/
+
+@keyframes social_animation {
+  0% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, 0, 0, 1);
+  }
+  1.3% {
+    transform: matrix3d(3.905, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -237.02, 0, 0, 1);
+  }
+  2.55% {
+    transform: matrix3d(4.554, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -182.798, 0, 0, 1);
+  }
+  4.1% {
+    transform: matrix3d(4.025, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -125.912, 0, 0, 1);
+  }
+  5.71% {
+    transform: matrix3d(3.039, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -79.596, 0, 0, 1);
+  }
+  8.11% {
+    transform: matrix3d(1.82, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -31.647, 0, 0, 1);
+  }
+  8.81% {
+    transform: matrix3d(1.581, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -21.84, 0, 0, 1);
+  }
+  11.96% {
+    transform: matrix3d(1.034, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.825, 0, 0, 1);
+  }
+  12.11% {
+    transform: matrix3d(1.023, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.53, 0, 0, 1);
+  }
+  15.07% {
+    transform: matrix3d(0.947, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.662, 0, 0, 1);
+  }
+  16.12% {
+    transform: matrix3d(0.951, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.007, 0, 0, 1);
+  }
+  27.23% {
+    transform: matrix3d(1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.352, 0, 0, 1);
+  }
+  27.58% {
+    transform: matrix3d(1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.121, 0, 0, 1);
+  }
+  38.34% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.311, 0, 0, 1);
+  }
+  40.09% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.291, 0, 0, 1);
+  }
+  50% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.048, 0, 0, 1);
+  }
+  60.56% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.007, 0, 0, 1);
+  }
+  82.78% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  100% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+}
+
+
+#coach1 {
+  position:relative;
+  float:right;
+  margin-right: 570px;
+  margin-left: 50px;
+  margin-top:30px;
+  margin-bottom: 70px;
+}
+
+#coach2 {
+  position:relative;
+  float:right;
+  margin-right: 570px;
+  margin-left: 50px;
+  margin-top:30px;
+  margin-bottom: 70px;
+} 
+
+#coach3 {
+  position:relative;
+  float:left;
+  margin-right: 80px;
+  margin-left: 290px;
+  margin-bottom: 70px;
+}
+
+#assistant {
+  position:relative;
+  float:right;
+  margin-right: 550px;
+  margin-left: 70px;
+  margin-bottom: 70px;
+}
+
+
+</style>
+
+</head>
+
+
+
+
+
+
+<body>
+
+
+
+
+
+<div class="navbar" style="border:3px solid darkOrange;">
+      <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         <!--  <a class="navbar-brand" href="index.html">BENGALS</a> -->
+          <span class="pic"> <img src="http://static.hudl.com/users/temp/4077010_e9eb525b25f045a8ba935bfa244e82be.jpg" style="height:50px; width:80px;" href="index.html"></span>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" style="color:white" href="index.html">Home</a>
+              <a class="nav-item nav-link" style="color:white" href="team.html">Schedules</a>
+              <a class="nav-item nav-link" style="color:white" href="contact.html">Roster & Coach</a>
+            </div>
+          </div>
+    </nav>
+</div>
+
+
+</br>
+
+
+
+<h1 style="color:white; text-align: center; font-style: Georgia; margin-bottom: 30px;"> Varsity Team </h1>
+
+
+ 
+<div>
+      <aside class="profile-card" id="coach3">
+            <header>
+              <!-- here’s the avatar -->
+                <img src="https://pbs.twimg.com/profile_images/810470653547737088/YcbkXUSZ_400x400.jpg" style="height:130px; width:130px;">
+              </a>
+              <!-- the username -->
+              <h1>Coach Puorro </h1>
+              <!-- and role or location -->
+              <h2>- Varsity Head Coach-</h2>
+            </header>
+            <!-- bit of a bio; who are you? -->
+            <div class="profile-bio">
+              <p>@CoachPuorro</p>
+              <p> Coach Puorro is entering his 12th year of coaching high school basketball and will be entering his 2nd season as the Head Basketball Coach at Barnegat High School. Prior to his arrival at Barnegat, Coach Puorro spent two seasons as the Assistant Varsity Coach at Point Pleasant Borough, two seasons as the Freshman Basketball Coach at Barnegat High School and six seasons as the Head Basketball Coach at Wall Township HS. Coach Puorro possesses a great deal of knowledge regarding what it takes to be successful in the game of basketball as he was the Boy's All-Time Leading Scorer at Point Pleasant Borough High School from 2002-2012 (Currently is second).  In his first season as the Head Basketball Coach at Barnegat High School, Coach Puorro was voted 2014-2015 Division Coach of the Year by his peers.  Coach Puorro was also voted 2012-2013 Monmouth County Coach of the Year by the Star Ledger Newspaper.</p>
+            </div>
+      </aside>
+</div>
+
+ 
+<div>
+      <aside class="profile-card" id="assitant">
+            <header>
+              <!-- here’s the avatar -->
+                <img src="https://pbs.twimg.com/profile_images/799971174608437248/eBmg1O1T_400x400.jpg" style="height:130px; width:130px;">
+              </a>
+              <!-- the username -->
+              <h1>Charlie Parker </h1>
+              <!-- and role or location -->
+              <h2>- Assistant Coach-</h2>
+            </header>
+            <!-- bit of a bio; who are you? -->
+            <div class="profile-bio">
+              <p>@Twitter</p>
+              <p> Description of coach </p>
+            </div>
+      </aside>
+</div>
+
+
+
+
+
+
+<div id="varsity-team">
+
+
+    <table>
+      <tr>
+        <th>Name </th>
+        <th>Position</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>Mike Ravello</td>
+        <td>Point Guard</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Carson Fransisco</td>
+        <td>Point Guard</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Everett Mcnulty</td>
+        <td>Small/ Power Foward</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>Thomas Krey</td>
+        <td>Shooting Guard/ Small Foward</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Alex Grogan</td>
+        <td>Small/ Power Foward</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Bobby Perrini</td>
+        <td>Point/ Shooting Guard</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Brian Finucan</td>
+        <td>Shooting Guard/ Small Foward/ Power Foward</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Dave Ciani</td>
+        <td>Point Guard</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Dexter Dambrowski</td>
+        <td>Small/ Power Foward</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Joey Coleman</td>
+        <td>Point/ Shooting Guard</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Juan Axzavier-Abraham</td>
+        <td>Small/ Power Foward</td>
+        <td>Senior</td>
+      </tr>
+       <td>Kevin Becker</td>
+        <td>Point Guard</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Matt Shaffery</td>
+        <td>small Foward</td>
+        <td>Junior</td>
+      </tr>
+       <td>Noah Pentlicki</td>
+        <td>N/A</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Owen Mcavoy</td>
+        <td>Small/ Power Foward</td>
+        <td>Junior</td>
+      </tr>
+       <tr>
+        <td>Parth Patel</td>
+        <td>N/A</td>
+        <td>Junior</td>
+      </tr>
+       <tr>
+        <td>Sean Morris</td>
+        <td>Center/ Foward</td>
+        <td>Junior</td>
+      </tr>
+     
+    </table> 
+</div>
+ 
+ 
+
+
+<h1 class="team-name"> Junior Varsity Team </h1>
+
+
+<div>
+      <aside class="profile-card" id="coach2">
+            <header>
+              <!-- here’s the avatar -->
+                <img src="http://s3.amazonaws.com/sidearm.sites/fdudevils.com/images/2009/9/30/McPHERSON,%20Sean.jpg" style="height:145px; width:130px;">
+              </a>
+              <!-- the username -->
+              <h1>Sean McPherson </h1>
+              <!-- and role or location -->
+              <h2>- Junior Varsity Head Coach-</h2>
+            </header>
+            <!-- bit of a bio; who are you? -->
+            <div class="profile-bio">
+              <p>@twitter/ Facebook</p>
+              <p>Description of coaching history.</p>
+            </div>
+      </aside>
+</div>
+
+
+
+<div id="varsity-team">
+
+    <table>
+      <tr>
+        <th>Name </th>
+        <th>Position</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+     
+    </table> 
+</div>
+
+
+
+<h1 class="team-name"> Freshmen Team </h1>
+
+
+  <div>
+      <aside class="profile-card" id="coach1">
+            <header>
+              <!-- here’s the avatar -->
+                <img src="https://pbs.twimg.com/profile_images/689868422440681472/NilD1Q3T.jpg" style="height:150px; width:150px;">
+              </a>
+              <!-- the username -->
+              <h1>Kevin Peters</h1>
+              <!-- and role or location -->
+              <h2>- Freshmen Head Coach-</h2>
+            </header>
+            <!-- bit of a bio; who are you? -->
+            <div class="profile-bio">
+              <p>@twitter</p>
+              <p>Description of coach</p>
+            </div>
+      </aside>
+</div>
+
+
+<div id="varsity-team">
+
+    <table>
+      <tr>
+        <th>Name </th>
+        <th>Position</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+      <tr>
+        <td>First, Last Name</td>
+        <td>Point Guard</td>
+        <td>Sophomore</td>
+      </tr>
+     
+    </table> 
+</div>
+
+ 
+ 
+
+
+
+
+<div class="footer">
+
+  <footer>
+      <ul>
+      <li><a href="http://www.hudl.com/team/v2/129526/barnegat-basketball">Hudl</a></li>
+      <li><a href="http://highschoolsports.nj.com/school/barnegat-barnegat/boysbasketball/">NJ.com</a></li>
+      <li><a href="http://www.maxpreps.com/high-schools/barnegat-bengals-(barnegat,nj)/basketball/home.htm">Maxpreps</a></li>
+      <li><a href="https://bhs.barnegatschools.com/athletics/winter_athletics/boys__basketball/">Barnegat High School</a></li>
+    </ul>
+  </footer>
+
+</div>
+
+</body>
+
+</html>
