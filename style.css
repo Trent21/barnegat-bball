@@ -270,11 +270,7 @@ and (max-device-width : 667px) {
   margin-right: 15px;
 }
   
-.#right-side {
- position:relative;
-  float: left;
-} 
-
+  
 .navbar {
   width: 400%;
 }
