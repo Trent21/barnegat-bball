@@ -272,6 +272,7 @@ and (max-device-width : 667px) {
 
 .navbar {
   width: 400%;
+  height: 20%;
 }
 
 
