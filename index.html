@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banegat hoops</title>
+
+
+
+
+
+	<!-- Bootstrap4 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+
+<!-- <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#" style="text-align: center;">Barnegat <br> Hoops</a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#coaches">Coaches</a>
+      <a class="nav-item nav-link" href="#varsity">Varisty</a>
+      <a class="nav-item nav-link" href="#juniorvarsity">Junior Varisty</a>
+      <a class="nav-item nav-link" href="#freshmen">Freshmen</a>
+      <a class="nav-item nav-link" href="#schedules">Schedules</a>
+    </div>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" style="height: 50px; width:50px;" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <p class="navbar-toggler-icon"></p>
+  </button>
+  <a class="navbar-brand" href="#home" style="font-size: 20px; text-align: center;">Barnegat Hoops</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#coaches">Coaches</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#varsity">Varsity</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#juniorvarsity">Junior Varsity</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#freshmen">Freshmen</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Schedules">Schdules</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron" id="home">
+
+  <h1 class="display-3" style="font-size: 100px;"><strong>Barnegat Hoops</strong></h1>
+  <br>
+  <br>
+ <h4 style="color: darkOrange;">Why Not Us? <br> <span></span>.</h4>
+  <hr class="my-4">
+  <p>Follow us on Facebook and Twitter for news and updates.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="https://www.facebook.com/BarnegatHoops/?fref=ts" role="button">Facebook</a>
+     <a class="btn btn-primary btn-lg" href="https://twitter.com/BarnegatHoops" role="button">Twitter</a>
+  </p>
+</div>
+
+
+
+<!-- slideshow -->
+
+<container>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <img class="d-block img-fluid" src="assets/barnegat-1.jpg" alt="First slide" style="height: 700px; width: 800px;">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="assets/barnegat-5-team.jpg" alt="Second slide" style="height: 700px; width: 800px;">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="assets/barnegat-7.jpg" alt="Third slide" style="height: 700px; width: 800px;">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br>
+<br>
+<h5 style="text-align: center;"> Barnegat Basketball 2016-2017 Season</h5>
+</container>
+
+
+
+<!-- Coaches Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<section id="coaches">
+  <div class="container">
+    <div class="row">
+      <h1>Coaching Staff</h1> 
+      <div class="block"></div>
+	<div class="container">
+    <div class="quoteLoop">
+      <blockquote class="quote"> <img src="https://pbs.twimg.com/profile_images/810470653547737088/YcbkXUSZ_400x400.jpg" width="150" height="150" alt="" />
+
+      <!--   <h5>&nbsp; --><br> 
+         <h5> Mike Puorro</h5>
+        <h5> Head Varsity basketball coach.</h5>
+
+          <p>Coach Puorro is entering his 12th year of coaching high school basketball and will be entering his 2nd season as the Head Basketball Coach at Barnegat High School. Prior to his arrival at Barnegat, Coach Puorro spent two seasons as the Assistant Varsity Coach at Point Pleasant Borough, two seasons as the Freshman Basketball Coach at Barnegat High School and six seasons as the Head Basketball Coach at Wall Township HS. Coach Puorro possesses a great deal of knowledge regarding what it takes to be successful in the game of basketball as he was the Boy's All-Time Leading Scorer at Point Pleasant Borough High School from 2002-2012 (Currently is second).  In his first season as the Head Basketball Coach at Barnegat High School, Coach Puorro was voted 2014-2015 Division Coach of the Year by his peers.  Coach Puorro was also voted 2012-2013 Monmouth County Coach of the Year by the Star Ledger Newspaper.<p><br>
+      </blockquote>
+
+
+
+      <blockquote class="quote"> <img src="https://pbs.twimg.com/profile_images/799971174608437248/eBmg1O1T_400x400.jpg" width="150" height="150" alt="" />
+      <!--   <h5>&nbsp; --><br>
+          <h5> Charlie Parker</h5>
+        <h5> Assistant Varsity basketball coach.</h5>
+
+          <p>Coach Puorro is entering his 12th year of coaching high school basketball and will be entering his 2nd season as the Head Basketball Coach at Barnegat High School. Prior to his arrival at Barnegat, Coach Puorro spent two seasons as the Assistant Varsity Coach at Point Pleasant Borough, two seasons as the Freshman Basketball Coach at Barnegat High School and six seasons as the Head Basketball Coach at Wall Township HS. Coach Puorro possesses a great deal of knowledge regarding what it takes to be successful in the game of basketball as he was the Boy's All-Time Leading Scorer at Point Pleasant Borough High School from 2002-2012 (Currently is second).  In his first season as the Head Basketball Coach at Barnegat High School, Coach Puorro was voted 2014-2015 Division Coach of the Year by his peers.  Coach Puorro was also voted 2012-2013 Monmouth County Coach of the Year by the Star Ledger Newspaper.<p><br>
+      
+      </blockquote>
+
+
+
+       <blockquote class="quote"> <img src="assets/mac-headshot.png" width="150" height="150" alt="" />
+        <!-- <h5>&nbsp; --><br>
+         <h5> Sean McPhereson</h5>
+        <h5> Junior Varsity basketball coach.</h5>
+
+          <p>Coach Puorro is entering his 12th year of coaching high school basketball and will be entering his 2nd season as the Head Basketball Coach at Barnegat High School. Prior to his arrival at Barnegat, Coach Puorro spent two seasons as the Assistant Varsity Coach at Point Pleasant Borough, two seasons as the Freshman Basketball Coach at Barnegat High School and six seasons as the Head Basketball Coach at Wall Township HS. Coach Puorro possesses a great deal of knowledge regarding what it takes to be successful in the game of basketball as he was the Boy's All-Time Leading Scorer at Point Pleasant Borough High School from 2002-2012 (Currently is second).  In his first season as the Head Basketball Coach at Barnegat High School, Coach Puorro was voted 2014-2015 Division Coach of the Year by his peers.  Coach Puorro was also voted 2012-2013 Monmouth County Coach of the Year by the Star Ledger Newspaper.<p><br>
+     
+      </blockquote>
+
+
+
+       <blockquote class="quote"> <img src="assets/jv-headshot.png" height="150" alt="" />
+       <!--  <h5>&nbsp; --><br>
+          <h5> Kevin Peters</h5>
+        <h5> Freshmen basketball coach.</h5>
+
+          <p>Coach Puorro is entering his 12th year of coaching high school basketball and will be entering his 2nd season as the Head Basketball Coach at Barnegat High School. Prior to his arrival at Barnegat, Coach Puorro spent two seasons as the Assistant Varsity Coach at Point Pleasant Borough, two seasons as the Freshman Basketball Coach at Barnegat High School and six seasons as the Head Basketball Coach at Wall Township HS. Coach Puorro possesses a great deal of knowledge regarding what it takes to be successful in the game of basketball as he was the Boy's All-Time Leading Scorer at Point Pleasant Borough High School from 2002-2012 (Currently is second).  In his first season as the Head Basketball Coach at Barnegat High School, Coach Puorro was voted 2014-2015 Division Coach of the Year by his peers.  Coach Puorro was also voted 2012-2013 Monmouth County Coach of the Year by the Star Ledger Newspaper.<p><br>
+          
+      </blockquote>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- Varsity Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<section id="varsity">
+  <div class="container">
+      <h1>Varsity Team</h1>
+      <div id="teams">
+
+
+    <table>
+      <tr>
+        <th>Name </th>
+        <th>Position</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>Mike Ravello</td>
+        <td>Point Guard</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Carson Fransisco</td>
+        <td>Point Guard</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Everett Mcnulty</td>
+        <td>Small/ Power Foward</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>Thomas Krey</td>
+        <td>Shooting Guard/ Small Foward</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Alex Grogan</td>
+        <td>Small/ Power Foward</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Bobby Perrini</td>
+        <td>Point/ Shooting Guard</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Brian Finucan</td>
+        <td>Shooting Guard/ Small Foward/ Power Foward</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Dave Ciani</td>
+        <td>Point Guard</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Dexter Dambrowski</td>
+        <td>Small/ Power Foward</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Joey Coleman</td>
+        <td>Point/ Shooting Guard</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Juan Axzavier-Abraham</td>
+        <td>Small/ Power Foward</td>
+        <td>Senior</td>
+      </tr>
+       <td>Kevin Becker</td>
+        <td>Point Guard</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Matt Shaffery</td>
+        <td>small Foward</td>
+        <td>Junior</td>
+      </tr>
+       <td>Noah Pentlicki</td>
+        <td>N/A</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Owen Mcavoy</td>
+        <td>Small/ Power Foward</td>
+        <td>Junior</td>
+      </tr>
+       <tr>
+        <td>Parth Patel</td>
+        <td>N/A</td>
+        <td>Junior</td>
+      </tr>
+       <tr>
+        <td>Sean Morris</td>
+        <td>Center/ Foward</td>
+        <td>Junior</td>
+      </tr>
+     
+    </table> 
+</div>
+  </div>
+</section>
+
+
+
+<!-- Junior Varsity Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<section id="juniorvarsity">
+  <div class="container">
+    <h1>Junior Varsity Team</h1>
+   <table>
+      <tr>
+        <th>Name </th>
+        <th>Position</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>Mike Ravello</td>
+        <td>Point Guard</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Carson Fransisco</td>
+        <td>Point Guard</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Everett Mcnulty</td>
+        <td>Small/ Power Foward</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>Thomas Krey</td>
+        <td>Shooting Guard/ Small Foward</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Alex Grogan</td>
+        <td>Small/ Power Foward</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Bobby Perrini</td>
+        <td>Point/ Shooting Guard</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Brian Finucan</td>
+        <td>Shooting Guard/ Small Foward/ Power Foward</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Dave Ciani</td>
+        <td>Point Guard</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Dexter Dambrowski</td>
+        <td>Small/ Power Foward</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Joey Coleman</td>
+        <td>Point/ Shooting Guard</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Juan Axzavier-Abraham</td>
+        <td>Small/ Power Foward</td>
+        <td>Senior</td>
+      </tr>
+       <td>Kevin Becker</td>
+        <td>Point Guard</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Matt Shaffery</td>
+        <td>small Foward</td>
+        <td>Junior</td>
+      </tr>
+       <td>Noah Pentlicki</td>
+        <td>N/A</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Owen Mcavoy</td>
+        <td>Small/ Power Foward</td>
+        <td>Junior</td>
+      </tr>
+       <tr>
+        <td>Parth Patel</td>
+        <td>N/A</td>
+        <td>Junior</td>
+      </tr>
+       <tr>
+        <td>Sean Morris</td>
+        <td>Center/ Foward</td>
+        <td>Junior</td>
+      </tr>
+     
+    </table> 
+    </div>
+</section>
+
+<!-- Freshmen Team Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<section id="freshmen">
+  <div class="container">
+    <h1> Freshmen Team</h1>
+      <table>
+      <tr>
+        <th>Name </th>
+        <th>Position</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>Mike Ravello</td>
+        <td>Point Guard</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Carson Fransisco</td>
+        <td>Point Guard</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Everett Mcnulty</td>
+        <td>Small/ Power Foward</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>Thomas Krey</td>
+        <td>Shooting Guard/ Small Foward</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Alex Grogan</td>
+        <td>Small/ Power Foward</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Bobby Perrini</td>
+        <td>Point/ Shooting Guard</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Brian Finucan</td>
+        <td>Shooting Guard/ Small Foward/ Power Foward</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Dave Ciani</td>
+        <td>Point Guard</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Dexter Dambrowski</td>
+        <td>Small/ Power Foward</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Joey Coleman</td>
+        <td>Point/ Shooting Guard</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Juan Axzavier-Abraham</td>
+        <td>Small/ Power Foward</td>
+        <td>Senior</td>
+      </tr>
+       <td>Kevin Becker</td>
+        <td>Point Guard</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Matt Shaffery</td>
+        <td>small Foward</td>
+        <td>Junior</td>
+      </tr>
+       <td>Noah Pentlicki</td>
+        <td>N/A</td>
+        <td>Senior</td>
+      </tr>
+      <tr>
+        <td>Owen Mcavoy</td>
+        <td>Small/ Power Foward</td>
+        <td>Junior</td>
+      </tr>
+       <tr>
+        <td>Parth Patel</td>
+        <td>N/A</td>
+        <td>Junior</td>
+      </tr>
+       <tr>
+        <td>Sean Morris</td>
+        <td>Center/ Foward</td>
+        <td>Junior</td>
+      </tr>
+     
+    </table> 
+  </div>
+</section>
+
+<!-- Schedules Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<section id="schedules">
+  <div class="container">
+    <h1>Schedules</h1>
+    <div class="block"></div>
+    <form>
+      <div class="row">
+               <img src="assets/schedule.png" style="height: 550px; width:700px; margin-bottom: 50px;">
+        </div>
+
+
+
+
+       <div class="row">
+          <img src="assets/july-schedule.png" style="height: 550px; width:700px; margin-bottom: 50px;">
+        </div>
+
+
+      
+      <div class="row">
+            <img src="assets/august-schedule.png" style="height: 550px; width:700px; margin-bottom: 30px;">
+       </div>
+
+
+    </form>
+    </div>
+</section>
+
+<!-- Footer Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<footer>
+  <div class="container">
+    <div class="nine columns">
+      <p>@ Barnegat Hoops</p>
+    </div>
+</footer>
+
+<script>
+	
+
+
+</script>
+
+</body>
+</html>
+
+
+
+</body>
+</html>
