@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Barnegat Basketball</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+ <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="Varsity.css"> -->
+
+
+  <style>
+    
+
+/*body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #3b3b3b;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  background: #2b2b2b;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 800px;
+}
+
+.table {
+  margin: 0 0 40px 0;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: table;
+}
+@media screen and (max-width: 580px) {
+  .table {
+    display: block;
+  }
+}
+
+.row {
+  display: table-row;
+  background: #f6f6f6;
+}
+.row:nth-of-type(odd) {
+  background: #e9e9e9;
+}
+.row.header {
+  font-weight: 900;
+  color: #ffffff;
+  background: #ea6153;
+}
+.row.green {
+  background: #27ae60;
+}
+.row.blue {
+  background: #2980b9;
+}
+@media screen and (max-width: 580px) {
+  .row {
+    padding: 8px 0;
+    display: block;
+  }
+}
+
+.cell {
+  padding: 6px 12px;
+  display: table-cell;
+}
+@media screen and (max-width: 580px) {
+  .cell {
+    padding: 2px 12px;
+    display: block;
+  }
+}*/
+
+
+
+
+
+
+
+  </style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="index.html">Barnegat Hoops</a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="coaches.html">Coaching Staff</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Varsity
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="varsity.html">Roster</a>
+          <a class="dropdown-item" href="varsityschedule.html">Schedule</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Junior Varsity
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="juniorvarsity.html">Roster</a>
+          <a class="dropdown-item" href="juniorvarsityschedule.html">Schedule</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Freshmen
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="freshmen.html">Roster</a>
+          <a class="dropdown-item" href="freshmenschedule.html">Schedule</a>
+        </div>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="alltimeleaders.html">All Time Leaders</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="Programstats.html">Program Stats</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+
+<!-- <div class="wrapper">
+  
+  <div class="table">
+    
+    <div class="row header">
+      <div class="cell">
+        Name
+      </div>
+      <div class="cell">
+        Age
+      </div>
+      <div class="cell">
+        Occupation
+      </div>
+      <div class="cell">
+        Location
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell">
+        Luke Peters
+      </div>
+      <div class="cell">
+        25
+      </div>
+      <div class="cell">
+        Freelance Web Developer
+      </div>
+      <div class="cell">
+        Brookline, MA
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell">
+        Joseph Smith
+      </div>
+      <div class="cell">
+        27
+      </div>
+      <div class="cell">
+        Project Manager
+      </div>
+      <div class="cell">
+        Somerville, MA
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell">
+        Maxwell Johnson
+      </div>
+      <div class="cell">
+        26
+      </div>
+      <div class="cell">
+        UX Architect & Designer
+      </div>
+      <div class="cell">
+        Arlington, MA
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell">
+        Harry Harrison
+      </div>
+      <div class="cell">
+        25
+      </div>
+      <div class="cell">
+        Front-End Developer
+      </div>
+      <div class="cell">
+        Boston, MA
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="table">
+    
+    <div class="row header green">
+      <div class="cell">
+        Product
+      </div>
+      <div class="cell">
+        Unit Price
+      </div>
+      <div class="cell">
+        Quantity
+      </div>
+      <div class="cell">
+        Date Sold
+      </div>
+      <div class="cell">
+        Status
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell">
+        Solid oak work table
+      </div>
+      <div class="cell">
+        $800
+      </div>
+      <div class="cell">
+        10
+      </div>
+      <div class="cell">
+        03/15/2014
+      </div>
+      <div class="cell">
+        Waiting for Pickup
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell">
+        Leather iPhone wallet
+      </div>
+      <div class="cell">
+        $45
+      </div>
+      <div class="cell">
+        120
+      </div>
+      <div class="cell">
+        02/28/2014
+      </div>
+      <div class="cell">
+        In Transit
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell">
+        27" Apple Thunderbolt displays
+      </div>
+      <div class="cell">
+        $1000
+      </div>
+      <div class="cell">
+        25
+      </div>
+      <div class="cell">
+        02/10/2014
+      </div>
+      <div class="cell">
+        Delivered
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell">
+        Bose studio headphones
+      </div>
+      <div class="cell">
+        $60
+      </div>
+      <div class="cell">
+        90
+      </div>
+      <div class="cell">
+        01/14/2014
+      </div>
+      <div class="cell">
+        Delivered
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="table">
+    
+    <div class="row header blue">
+      <div class="cell">
+        Username
+      </div>
+      <div class="cell">
+        Email
+      </div>
+      <div class="cell">
+        Password
+      </div>
+      <div class="cell">
+        Active
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell">
+        ninjalug
+      </div>
+      <div class="cell">
+        misterninja@hotmail.com
+      </div>
+      <div class="cell">
+        ************
+      </div>
+      <div class="cell">
+        Yes
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell">
+        jsmith41
+      </div>
+      <div class="cell">
+        joseph.smith@gmail.com
+      </div>
+      <div class="cell">
+        ************
+      </div>
+      <div class="cell">
+        No
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell">
+        1337hax0r15
+      </div>
+      <div class="cell">
+        hackerdude1000@aol.com
+      </div>
+      <div class="cell">
+        ************
+      </div>
+      <div class="cell">
+        Yes
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell">
+        hairyharry19
+      </div>
+      <div class="cell">
+        harryharry@gmail.com
+      </div>
+      <div class="cell">
+        ************
+      </div>
+      <div class="cell">
+        Yes
+      </div>
+    </div>
+    
+  </div>
+  
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

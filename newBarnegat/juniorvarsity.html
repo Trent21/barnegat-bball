@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Barnegat Basketball</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+ <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Varsity.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="index.html">Barnegat Hoops</a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="coaches.html">Coaching Staff</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Varsity
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="varsity.html">Roster</a>
+          <a class="dropdown-item" href="varsityschedule.html">Schedule</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Junior Varsity
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="juniorvarsity.html">Roster</a>
+          <a class="dropdown-item" href="juniorvarsityschedule.html">Schedule</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Freshmen
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="freshmen.html">Roster</a>
+          <a class="dropdown-item" href="freshmenschedule.html">Schedule</a>
+        </div>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="alltimeleaders.html">All Time Leaders</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="Programstats.html">Program Stats</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<!-- jumbotron -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <img class="d-block img-fluid" src="http://i2.cdn.cnn.com/cnnnext/dam/assets/161201115958-68-year-in-pictures-2016-restricted-super-169.jpg" alt="First slide" style="width: 100%;">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="http://i2.cdn.cnn.com/cnnnext/dam/assets/161201115958-68-year-in-pictures-2016-restricted-super-169.jpg" alt="Second slide" style="width: 100%;">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="http://i2.cdn.cnn.com/cnnnext/dam/assets/161201115958-68-year-in-pictures-2016-restricted-super-169.jpg" alt="Third slide" style="width: 100%;">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
+<!-- header -->
+
+<div class="header">
+ <h1> Varsity Roster </h1>
+ </div>
+
+    <!-- Page Content -->
+   <table>
+ <!--  <caption>2015-2016 Roster</caption> -->
+<!--   This is my first row of data -->
+  <tr>
+    <th>No.</th>
+    <th>Name</th>
+      <th>Year</th>
+    <th>Pos.</th>
+    <th>Ht.</th>
+    <th>Wt.</th>
+    <th>Hometown/High School</th>
+  </tr>
+  <tr>
+  <td>1 </td>
+  <td>Johnny Hill </td>
+  <td>SR  </td>
+  <td>Guard </td>
+  <td>6-3 </td>
+  <td>187 </td>
+  <td>Glendale Heights, Ill./Glenbard East</td>
+</tr>
+<tr>
+  <td>2 </td>
+  <td>Jon McKeeman  </td>
+  <td>SR  </td>
+  <td>Guard </td>
+  <td>6-1 </td>
+  <td>190 </td>
+  <td>Fort Wayne, Ind./Carroll</td>
+</tr>
+<tr>
+  <td>3 </td>
+  <td>P.J. Thompson </td>
+  <td>SO  </td>
+  <td>Guard </td>
+  <td>5-10  </td>
+  <td>188 </td>
+  <td>Indianapolis, Ind./Brebeuf Prep</td>
+</tr>
+<tr>
+  <td>5 </td>
+  <td>Basil Smotherman  </td>
+  <td>JR  </td>
+  <td>Forward </td>
+  <td>6-6 </td>
+  <td>230 </td>
+  <td>Indianapolis, Ind./Lawrence North</td>
+</tr>
+<tr>
+  <td>11  </td>
+  <td>Stephen Toyra </td>
+  <td>SR  </td>
+  <td>Guard </td>
+  <td>6-3 </td>
+  <td>185 </td>
+  <td>Lafayette, Ind./Faith Christian</td>
+</tr>
+<tr>
+  <td>12  </td>
+  <td>Vince Edwards </td>
+  <td>SO  </td>
+  <td>Forward </td>
+  <td>6-8 </td>
+  <td>225 </td>
+  <td>Middletown, Ohio/Middletown</td>
+</tr>
+<tr>
+  <td>14  </td>
+  <td>Ryan Cline  </td>
+  <td>FR  </td>
+  <td>Guard </td>
+  <td>6-5 </td>
+  <td>190 </td>
+  <td>Carmel, Ind./Carmel</td>
+</tr>
+<tr>
+  <td>20  </td>
+  <td>A.J. Hammons  </td>
+  <td>SR  </td>
+  <td>Center  </td>
+  <td>7-0 </td>
+  <td>250 </td>
+  <td>Gary, Ind./Oak Hill [Va.] Academy</td>
+</tr>
+<tr>
+  <td>21  </td>
+  <td>Kendall Stephens  </td>
+  <td>JR  </td>
+  <td>Guard </td>
+  <td>6-7 </td>
+  <td>205 </td>
+  <td>St. Charles, Ill./St. Charles East</td>
+</tr>
+<tr>
+  <td>22  </td>
+  <td>Grant Weatherford </td>
+  <td>FR  </td>
+  <td>Guard </td>
+  <td>6-2 </td>
+  <td>198 </td>
+  <td>Cicero, Ind./Hamilton Heights</td>
+</tr>
+<tr>
+  <td>23  </td>
+  <td>Jacquil Taylor  </td>
+  <td>RS FR </td>
+  <td>Forward </td>
+  <td>6-10  </td>
+  <td>240 </td>
+  <td>Cambridge, Mass./Beaver Country Day School</td>
+</tr>
+<tr>
+  <td>24  </td>
+  <td>Grady Eifert  </td>
+  <td>FR  </td>
+  <td>Forward </td>
+  <td>6-6 </td>
+  <td>221 </td>
+  <td>Fort Wayne, Ind./Bishop Dwenger</td>
+</tr>
+<tr>
+  <td>31  </td>
+  <td>Dakota Mathias  </td>
+  <td>SO  </td>
+  <td>Guard </td>
+  <td>6-4 </td>
+  <td>200 </td>
+  <td>Elida, Ohio/Elida</td>
+</tr>
+<tr>
+  <td>35  </td>
+  <td>Rapheal Davis </td>
+  <td>SR  </td>
+  <td>Guard </td>
+  <td>6-6 </td>
+  <td>217 </td>
+  <td>Fort Wayne, Ind./La Lumiere</td>
+</tr>
+<tr>
+  <td>44  </td>
+  <td>Isaac Haas  </td>
+  <td>SO  </td>
+  <td>Center  </td>
+  <td>7-2 </td>
+  <td>282 </td>
+  <td>Hokes Bluff, Ala./Hokes Bluff</td>
+</tr>
+<tr>
+  <td>50  </td>
+  <td>Caleb Swanigan  </td>
+  <td>FR  </td>
+  <td>Forward </td>
+  <td>6-9 </td>
+  <td>250 </td>
+  <td>Fort Wayne, Ind./Homestead</td>
+</tr>
+</table>
+
+
+<div class="footer">
+  <h1 id="footer"> Footer </h1>
+</div>
+
+
+</body>
+
+
+</html>
